@@ -17,14 +17,24 @@ body {
 header {
     background: linear-gradient(to right, #000, #444); /* Dégradé pour le fond */
     color: #fff; /* Texte blanc */
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /* Remplissage autour du contenu */
+    text-align: center; /* Centre le texte */
 }
 
-/* Style pour les titres */
-h1 {
+header h1 {
     font-size: 2.5em; /* Grande taille pour le titre */
     margin-bottom: 10px; /* Espace sous le titre */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Supprime le remplissage */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments en ligne */
+    margin-right: 10px; /* Espace entre les éléments */
 }
 
 /* Style pour le contenu principal */
@@ -67,6 +77,17 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-align: center; /* Centre le texte */
+    padding: 10px; /* Remplissage autour du contenu */
+    position: fixed; /* Position fixe en bas */
+    width: 100%; /* Prend toute la largeur */
+    bottom: 0; /* Alignement en bas */
 }
 
 /* Responsive design */
