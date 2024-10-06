@@ -1,48 +1,77 @@
+/* Réinitialisation de styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Styles globaux */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #000;
-    margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif; /* Police de base */
+    line-height: 1.6; /* Espacement entre les lignes */
+    background-color: #f9f9f9; /* Couleur de fond douce */
+    color: #333; /* Couleur du texte */
 }
 
+/* Style pour l'en-tête */
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
+    background: linear-gradient(to right, #000, #444); /* Dégradé pour le fond */
+    color: #fff; /* Texte blanc */
     padding: 20px;
+    text-align: center;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+/* Style pour les titres */
+h1 {
+    font-size: 2.5em; /* Grande taille pour le titre */
+    margin-bottom: 10px; /* Espace sous le titre */
+}
+
+/* Style pour le contenu principal */
+main {
+    max-width: 800px; /* Limite la largeur du contenu */
+    margin: 20px auto; /* Centre le contenu sur la page */
+    padding: 20px; /* Ajoute du remplissage */
+    background: #fff; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+}
+
+/* Style pour les paragraphes */
+p {
+    margin-bottom: 15px; /* Espace entre les paragraphes */
+}
+
+/* Style pour les liens */
+a {
+    color: #007BFF; /* Couleur des liens */
+    text-decoration: none; /* Supprime le soulignement */
+    transition: color 0.3s; /* Transition douce pour la couleur */
+}
+
+a:hover {
+    color: #0056b3; /* Couleur au survol */
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Styles des boutons */
+button {
+    background-color: #007BFF; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Remplissage interne */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s; /* Transition douce pour la couleur de fond */
+}
+
+button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Réduit la taille du titre sur mobile */
+    }
 }
