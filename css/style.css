@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif; /* Police de base */
     line-height: 1.6; /* Espacement entre les lignes */
-    background-color: #f9f9f9; /* Couleur de fond douce */
+    background-color: #f4f4f4; /* Couleur de fond douce */
     color: #333; /* Couleur du texte */
 }
 
@@ -45,6 +45,12 @@ main {
     background: #fff; /* Fond blanc */
     border-radius: 8px; /* Coins arrondis */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+}
+
+/* Style pour les titres */
+h2 {
+    margin-top: 20px; /* Espace au-dessus des titres */
+    margin-bottom: 10px; /* Espace en dessous des titres */
 }
 
 /* Style pour les paragraphes */
@@ -85,9 +91,9 @@ footer {
     color: #fff; /* Texte blanc */
     text-align: center; /* Centre le texte */
     padding: 10px; /* Remplissage autour du contenu */
-    position: fixed; /* Position fixe en bas */
-    width: 100%; /* Prend toute la largeur */
+    position: relative; /* Position relative pour éviter des problèmes avec d'autres éléments */
     bottom: 0; /* Alignement en bas */
+    width: 100%; /* Prend toute la largeur */
 }
 
 /* Responsive design */
